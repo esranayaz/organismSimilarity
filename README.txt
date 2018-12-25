@@ -16,8 +16,18 @@ output file name --> out_<processed input file>.json
 	  same protein. protein.py merges them together as well as grouping them using
 	  mapreduce.
 
-$similarity.py
+$EditDistance.py <output of protein.py>
+output file name -> editdistance_<infile>.json
 
+$protein2.py <output of EditDistance.py>
+
+
+***
+
+Original MapReduce.py: https://github.com/mon95/Implementation-of-MapReduce-algorithms-using-a-simple-Python-MapReduce-framework 
+Note: MapReduce is used to group data together, not for speed up.
+
+***
 
 1ST MAPREDUCE
 input: ["insulin","insan","ABC.."]
@@ -27,6 +37,6 @@ EDIT DISTANCE
 input: ["insulin",(("insan","ABC.."),("kedi","XYZ.."),...)]
 output: ["insulin",(("kedi, 95%"),("fare","87%"),...)]
 
-2ND OUTPUT
+2ND MAPREDUCE
 input: ["insulin",(("kedi, 95%"),("fare","87%"),...)]
 output: ["insan",("kedi, 95%"),("fare","87%"),...)]
