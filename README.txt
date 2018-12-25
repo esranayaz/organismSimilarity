@@ -40,3 +40,11 @@ output: ["insulin",(("kedi, 95%"),("fare","87%"),...)]
 2ND MAPREDUCE
 input: ["insulin",(("kedi, 95%"),("fare","87%"),...)]
 output: ["insan",("kedi, 95%"),("fare","87%"),...)]
+
+*** 
+
+sample output:
+
+[["Homo sapiens", "Mus musculus"], 0.6940215456658885]
+[["Homo sapiens", "Sus scrofa"], 0.7027358307680194]
+[["Homo sapiens", "Xenopus laevis"], 0.5941235463296289]
